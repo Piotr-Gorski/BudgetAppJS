@@ -54,7 +54,7 @@ allBtn.addEventListener("click", function(){
 
 addExpense.addEventListener("click", function(){
     
-    if(!expenseTitle.value || !expenseAmount.value ) return;
+    if(!expenseTitle.value || !expenseAmount.value || expenseAmount.value <= 0 ) return;
 
     
     let expense = {
@@ -70,7 +70,7 @@ addExpense.addEventListener("click", function(){
 
 addIncome.addEventListener("click", function(){
     
-    if(!incomeTitle.value || !incomeAmount.value ) return;
+    if(!incomeTitle.value || !incomeAmount.value || incomeAmount.value <= 0 ) return;
 
     
     let income = {
